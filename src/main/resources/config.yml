@@ -1,0 +1,22 @@
+# SparkQueue Configuration
+settings:
+  check-interval-seconds: 1
+  max-queue-size: 5000
+  send-delay-ms: 250
+
+priority-tiers:
+  admin:
+    weight: 100
+    permission: "sparkqueue.priority.admin"
+  donor:
+    weight: 50
+    permission: "sparkqueue.priority.donor"
+  regular:
+    weight: 1
+    permission: ""
+
+messages:
+  queue-joined: "<green>Joined queue for <yellow>%server%</yellow>. Position: <gold>%position%</gold></green>"
+  queue-left: "<yellow>Left the queue for %server%.</yellow>"
+  actionbar-progress: "<gold>Queue: <yellow>%position%</yellow>/<yellow>%total%</yellow> -> <green>%server%</green></gold>"
+  server-offline: "<red>Target server %server% is currently offline or restarting.</red>"

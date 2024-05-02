@@ -1,0 +1,9 @@
+{
+  "id": "sparkqueue",
+  "name": "SparkQueue",
+  "version": "1.4.0",
+  "description": "High-performance priority queue and player matchmaking system for Velocity networks.",
+  "authors": ["FalseSharing"],
+  "main": "net.falsesharing.sparkqueue.SparkQueuePlugin",
+  "dependencies": []
+}
