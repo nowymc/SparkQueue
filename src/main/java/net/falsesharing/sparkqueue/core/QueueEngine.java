@@ -115,3 +115,5 @@ public final class QueueEngine {
         activePlayerQueues.clear();
     }
 }
+
+// patch #2 [2024-05-30 15:41:22 +0300]
