@@ -25,7 +25,7 @@ public final class QueueCommand implements SimpleCommand {
         if (args.length == 0) {
             int pos = engine.getPosition(player.getUniqueId());
             if (pos > 0) {
-                player.sendMessage(Component.text("Your position in queue: " + pos, NamedTextColor.GOLD));
+                player.sendMessage(Component.text("Ваша позиция в очереди: " + pos, NamedTextColor.GOLD));
             } else {
                 player.sendMessage(Component.text("Usage: /queue <server> or /queue leave", NamedTextColor.YELLOW));
             }
